@@ -9,16 +9,28 @@ using namespace std; // Use the standard namespace
 // Main entry point to the application
 int main()
 {
-	int number; // Data type + unique identifiers
+	double n;
+	
+	cout << " The size of a bool: " << sizeof(bool) << " bytes.\n";
+	cout << " The size of a char: " << sizeof(char) << " bytes.\n";
+	cout << " The size of a short int: " << sizeof(short int) << " bytes.\n";
+	cout << " The size of a float: " << sizeof(float) << " bytes.\n";
+	cout << " The size of a integer: " << sizeof(int) << " bytes.\n";
+	cout << " The size of a long int:" << sizeof(long int) << " bytes.\n";
+	cout << " The size of a double: " << sizeof(double) << " bytes.\n";
+	cout << " The size of a long long int: " << sizeof(long long int) << " bytes.\n";
+	cout << " The size of a string: " << sizeof(string) << " bytes.\n";
 
-	int checking;
-	unsigned miles;
-	long days;
+	double first = 127,
+		second = 27,
+		third = 314,
+		fourth = 420;
 
-	checking = -20;
-	miles = 4276;
-	days = 192000;
+	cout << "Addition: " << first + fourth << endl;
+	cout << "Subtraction: " << second - third << endl;
+	cout << "Division: " << fourth / second << endl;
+	cout << "Multiplication: " << third * first << endl;
+	cout << "Modulus: " << (int)third % (int)fourth << endl; 
 
-	cout << "i definitely did not travel " << miles << " miles this year";
-		return 0;
+
 }
