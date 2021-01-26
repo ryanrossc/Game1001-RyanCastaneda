@@ -1,4 +1,4 @@
-// Calculate the area of a rectangle
+// Calculate sum, product, and average of user input numbers
 #include <iostream>
 using namespace std;
 
