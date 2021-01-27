@@ -28,3 +28,7 @@ int main()
 	cout << "The Average is " << average << endl;
 
 }
+
+
+
+

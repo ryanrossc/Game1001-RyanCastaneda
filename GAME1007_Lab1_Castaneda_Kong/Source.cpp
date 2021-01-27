@@ -7,69 +7,78 @@ using namespace std;
 
 int main()
 {
-	// Input user names
+// Input user names
 
 	string user1, user2;
 
 	cout << " Player 1, what is your name?\n ";
-	getline(cin, user1);
+		getline(cin, user1);
 	cout << " Player 2, what is your name?\n ";
-	getline(cin, user2);
+		getline(cin, user2);
 
 	cout << " Hello " << user1 << " & " << user2 << ", Let's play a game! \n";
 
-	// Generating random numbers
+// Generating random numbers
 
-	float answer1, answer2;
+	 int answer1, answer2;
 
 	srand((unsigned)time(0));
 	answer1 = (rand() % 100) + 1;
 	answer2 = (rand() % 100) + 1;
 
-	// Picking a starting player
+// Picking a starting player
 
-	if (rand() % 2 == 1) {
-		goto input1;
-	}
-	else {
-		goto input2;
-	}
+	float guess1{}, guess2{};
 
-	// Players input guesses
-
-	float guess1, guess2;
-
-input1:
+	while ( guess1 != answer1)
+	while ( guess2 != answer2)
+	
+if (rand() % 2 == 1) 
+	
+	{
+		
 	cout << "" << user1 << ", please guess your number. " << endl;
-	cin >> guess1;
+		::cin >> guess1;
+			
+			if (guess1 > answer1)
+			cout << " Guess lower. \n" << endl;
 
-	if (guess1 == answer1) {
-		cout << " Winner Winner Chicken Dinner!";
-	}
-	else if (guess1 < answer1) {
-		cout << " Guess higher. \n";
-		goto input2;
-	}
-	else (guess1 > answer1);
-	cout << " Guess lower. \n" << endl;
-	goto input2;
+			else (guess1 < answer1);
+			cout << " Guess higher. \n";
 
-input2:
 	cout << "" << user2 << ", please guess your number. " << endl;
-	cin >> guess2;
+		::cin >> guess2;
 
-	if (guess2 == answer2) {
-		cout << " Winner Winner Chicken Dinner!";
+			if (guess2 > answer2)
+			cout << " Guess lower. \n" << endl;
+
+			else (guess2 < answer2);
+			cout << " Guess higher. \n";
 	}
-	else if (guess2 < answer2) {
-		cout << " Guess higher. \n";
-		goto input1;
+else
+		
+	{
+
+	cout << "" << user2 << ", please guess your number. " << endl;
+		cin >> guess2;
+		
+			if (guess2 > answer2)
+			cout << " Guess lower. \n" << endl;
+
+			else (guess2 < answer2);
+			cout << " Guess higher. \n";
+
+	cout << "" << user1 << ", please guess your number. " << endl;
+		cin >> guess1;
+
+			if (guess1 > answer1)
+			cout << " Guess lower. \n" << endl;
+
+			else (guess1 < answer1);
+			cout << " Guess higher. \n";
 	}
-	else (guess2 > answer2);
-	cout << " Guess lower. \n" << endl;
-	goto input1;
 
-
+// Players input guesses
 
 }
 		
