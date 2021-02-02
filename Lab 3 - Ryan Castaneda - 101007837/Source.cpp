@@ -12,7 +12,7 @@ int main()
 	double regularPay2;
 	double overtimePay;
 	double totalPay;
-	
+
 	cout << " What is your hourly rate? " << endl;
 	cin >> hourlyRate;
 
@@ -24,7 +24,7 @@ int main()
 		overtimeRate = hourlyRate * 1.5;
 		overtimeHours = hoursWorked - 40;
 		regularPay = hourlyRate * 40;
-		
+
 		cout << " Your regular pay is $" << regularPay << endl;
 
 		overtimePay = overtimeRate * overtimeHours;
