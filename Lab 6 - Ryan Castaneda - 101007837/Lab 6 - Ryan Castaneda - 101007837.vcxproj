@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c82fca69-bdbe-4a3f-8871-173100b31334}</ProjectGuid>
-    <RootNamespace>GAME1007Lab1CastanedaKong</RootNamespace>
+    <ProjectGuid>{468dd08a-6494-4755-a210-94669af9c412}</ProjectGuid>
+    <RootNamespace>Lab6RyanCastaneda101007837</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>GAME1007 - Number Guessing</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
